@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(252, 248, 185, 0.9);
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(248, 242, 156, 0.9);
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.credentials {
+  padding: 15px;
+  text-align: left;
+}
+
+.credentials label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.credentials input[type="text"],
+.credentials input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f28632;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+button:hover {
+  background-color: #f46f0a;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  min-height: 1.2em; 
+}
+
+#student-list {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  list-style-type: none;
+}
+
+#student-list li {
+  font-size: 18px;
+  color: #090808;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
