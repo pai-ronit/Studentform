@@ -2,44 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-        }
-        #error {
-            color: red;
-            margin-top: 10px;
-        }
-        #student-list {
-            margin-top: 20px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
     <link rel="stylesheet" href="studentform.css">
 </head>
 <body>
-    <main>
-        <h1>Student Registration</h1>
-        <form id="student-form">
-          <div class="credentials">
-            <label for="student-id">Student ID</label>
-            <input type="text" id="student-id" name="student-id">
+        <main>
+                <h1>Student Registration</h1>
+                <form id="student-form">
+                    <div class="credentials">
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="student-id">
       
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
       
-            <label for="age">Age</label>
-            <input type="number" id="age" name="age">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age">
       
-            <button type="submit">Add Student</button>
-          </div>
-        </form>
-        <div id="error"></div>
-      
-        <h2>Student Details</h2>
-        <ul id="student-list"></ul>
-      </main>
+                        <button type="submit">Add Student</button>
+                    </div>
+                </form>
+                <div id="error"></div>
+
+                <div class="actions">
+                        <h2>Delete Student</h2>
+                        <input type="text" id="delete-id" placeholder="Enter Student ID">
+                        <button id="delete-btn" type="button">Delete</button>
+
+                        <h2>Update Student</h2>
+                        <input type="text" id="update-id" placeholder="Enter Student ID">
+                        <button id="update-btn" type="button">Update</button>
+                </div>
+
+                <h2>Student Details</h2>
+                <ul id="student-list"></ul>
+
+                
+                <div id="update-modal" class="modal" style="display:none;">
+                        <div class="modal-content">
+                                <span id="close-modal" class="close">&times;</span>
+                                <h3>Update Student Details</h3>
+                                <form id="update-form">
+                                        <label for="update-name">Name</label>
+                                        <input type="text" id="update-name" name="update-name">
+                                        <label for="update-age">Age</label>
+                                        <input type="number" id="update-age" name="update-age">
+                                        <button type="submit">Save Changes</button>
+                                </form>
+                                <div id="update-error" style="color:red;"></div>
+                        </div>
+                </div>
+            </main>
     <script src="script.js"></script> 
 </body>
 </html>
